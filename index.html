@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Movie Tickets</h1>
+      <p>Let your imagination run wild</p>
+    </div>
+    <h2>Info:</h2>
+    <form class="userInput">
+      <div class="form-group">
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Ex. Bob">
+      </div>
+      <div class="form-group">
+        <label for="ageInput">Enter your age:</label>
+        <input type="number" class="form-control" id="ageInput" placeholder="Ex. 12">
+      </div>
+      <h2>Movies:</h2>
+      <div class="form-check">
+        <input class="form-check-input" name="movie" type="radio" id="movie1" value="1">
+        <label class="form-check-label" for="movie1">Dark Knight</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" name="movie" type="radio" id="movie2" value="2">
+        <label class="form-check-label" for="movie2">Double Tap</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" name="movie" type="radio" id="movie3" value="3">
+        <label class="form-check-label" for="movie3">Gemini</label>
+      </div>
+      <h2>Time:</h2>
+      <div class="form-check">
+        <input class="form-check-input" name="time" type="radio" id="time1" value="1">
+        <label class="form-check-label" for="time1">12:00</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" name="time" type="radio" id="time2" value="2">
+        <label class="form-check-label" for="time2">5:00</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" name="time" type="radio" id="time3" value="3">
+        <label class="form-check-label" for="time3">7:00</label>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+    <div class="card">
+      <p id="answer"></p>
+    </div>
+  </div>
+</body>
+</html>
